@@ -11,7 +11,7 @@ import os
 # Agrega el directorio raíz del proyecto al path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from db.database import Base, MARIADB_URL
+from db.database  import Base, MARIADB_URL
 from db.models import Categoria
 
 # this is the Alembic Config object, which provides
@@ -85,3 +85,4 @@ if context.is_offline_mode():
     run_migrations_offline()
 else:
     run_migrations_online()
+
